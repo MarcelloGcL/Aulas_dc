@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let lado_1 = 1;
+        let lado_2 = 1;
+        let lado_3 = 1;
+
+        //Validando o triângulo
+        const equilátero = lado_1 === lado_2 && lado_2 === lado_3
+        const isósceles = lado_1 === lado_2 && lado_2 === lado_3 || lado_2 === lado_3
+
+
+        //logica dos condicionais
+        if (equilátero) {
+            console.log(`Esse triangulo e equilátero`)
+        }
+
+        if (isósceles && !equilátero) {
+            console.log(`Esse triangulo e isósceles`)
+        }
+
+        if (!equilátero && !isósceles) {
+            console.log(`Esse triangulo e escaleno`)
+        }
+
+        //Validar se é um triangulo 
+
+
+    </script>
+    
+</body>
+</html>

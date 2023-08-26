@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        const array = [1, 2, 3, "4", 5, 6, 7, "olá mundo", 8, 9];
+
+        let soma = 0
+
+        let array_tratado = []
+        let array_erros = []
+
+
+        for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+
+            //somente números inteiros
+            if (typeof element === "number" && element > 0) {
+                //soma todos os elementos
+                soma = element + soma;
+                array_tratado.push(element)
+            }
+
+            else{
+                array_erros.push(element)
+            }
+            
+            console.log(soma)
+
+        }
+
+        console.log (array_tratado)
+        console.log(array_erros)
+
+    </script>
+</body>
+
+</html>
